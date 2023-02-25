@@ -19,3 +19,28 @@ const octokit = new Octokit({
 });
 
 ```
+4. Replace the owner and repo values in the code with the owner and repository name of your project:
+```
+const owner = "your-username";
+const repo = "your-repository";
+
+```
+5. Replace the comment value in the code with the message you want the bot to post as a comment:
+```
+const comment = "your-comment";
+
+```
+# Usage
+*To run the bot, use the following command:*
+```
+node index.js
+
+```
+### The bot will retrieve all open issues in the specified repository and post a comment on each issue.
+
+# Functions
+This bot has two functions:
+
+`createComment(issueNumber)`: This function creates a new comment on the specified issue.
+
+`getOpenIssues()`: This function retrieves all open issues in the specified repository.
